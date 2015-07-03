@@ -1,2 +1,6 @@
 .idea
 Card-Builder.iml
+node_modules
+bower_components
+.tmp
+dist

@@ -1,0 +1,20 @@
+{
+  "name": "Card-Builder",
+  "version": "0.0.0",
+  "homepage": "https://github.com/rayvafa/Card-Builder",
+  "authors": [
+    "Ray Vafa <ray.vafatabar@sydney.edu.au>"
+  ],
+  "moduleType": [
+    "node"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {
+    "bootstrap-sass": "~3.3.5"
+  }
+}

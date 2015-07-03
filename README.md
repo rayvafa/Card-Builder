@@ -13,6 +13,13 @@ Repository
 
 Dependencies
 ------------
+* npm
+* grunt
+* bower
+* sass
+* bootstrap
+* jquery
+* coffee
 
 Installation
 ------------
