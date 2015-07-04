@@ -79,8 +79,20 @@ module.exports = (grunt) ->
 			dist: 'dist'
 			tmp: '.tmp'
 
+		watch:
+			styles:
+				files: ['<%= config.src %>/styles/**/*.scss']
+				tasks: ['sass', 'cssmin']
+				options:
+					spawn: false
+					debounceDelay: 1000,
+
 	grunt.registerTask "clean-all", [
 		"clean"
+	]
+
+	grunt.registerTask "watcher", [
+		"watch"
 	]
 
 	grunt.registerTask "build", [
