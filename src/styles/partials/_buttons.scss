@@ -1,0 +1,17 @@
+
+.hcard-button {
+	font-size: 16px;
+	color: white;
+	padding: 8px 30px;
+	border: none;
+}
+
+.hcard-button-blue {
+	@extend .hcard-button;
+	background-color: $light_blue;
+}
+
+.hcard-button-grey {
+	@extend .hcard-button;
+	background-color: $dark_grey;
+}

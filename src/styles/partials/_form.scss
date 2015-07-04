@@ -1,4 +1,30 @@
 
-.form-heading {
-	color: $dark_blue;
+.hcard-form {
+	.form-heading {
+		font-family: 'Merriweather Sans', sans-serif;
+		font-weight: 800;
+		font-size: 28px;
+		color: $dark_blue;
+	}
+
+	label {
+		font-family: 'Merriweather Sans', sans-serif;
+		font-size: 12px;
+		text-transform: uppercase;
+	}
+
+	input[type="text"] {
+		font-family: 'Merriweather', serif;
+		font-size: 16px;
+	}
+
+	.hcard-form-separator {
+		font-family: 'Merriweather Sans', sans-serif;
+		font-weight: 700;
+		font-size: 10px;
+		color: $light_grey;
+		border-bottom: 1px solid $light_grey;
+		text-transform: uppercase;
+		margin: 30px 0;
+	}
 }

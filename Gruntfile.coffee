@@ -86,6 +86,12 @@ module.exports = (grunt) ->
 				options:
 					spawn: false
 					debounceDelay: 1000,
+			files:
+				files: ['<%= config.src %>/*.html']
+				tasks: ['copy']
+				options:
+					spawn: false
+					debounceDelay: 1000,
 
 	grunt.registerTask "clean-all", [
 		"clean"

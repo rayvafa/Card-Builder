@@ -17,92 +17,101 @@
 
 <div class="container">
 	<div class="row">
-		<div class="hcard-form col-lg-6">
-			<h1>hCard Builder</h1>
+		<div class="hcard-form col-md-6">
+			<h1 class="form-heading">hCard Builder</h1>
 			<div class="hcard-form-separator">Personal details</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="givenName">Given name</label>
 					<input type="text" class="form-control" id="givenName">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="surename">Surename</label>
 					<input type="text" class="form-control" id="surename">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="email">Email</label>
 					<input type="email" class="form-control" id="email">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="phone">phone</label>
 					<input type="text" class="form-control" id="phone">
 				</div>
 			</div>
 			<div class="hcard-form-separator">Address</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="houseName">House name or #</label>
 					<input type="text" class="form-control" id="houseName">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="phone">Street</label>
 					<input type="text" class="form-control" id="street">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="subrub">Subrub</label>
 					<input type="text" class="form-control" id="subrub">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="state">State</label>
 					<input type="text" class="form-control" id="state">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="postcode">Postcode</label>
 					<input type="text" class="form-control" id="postcode">
 				</div>
-				<div class="col-md-6 form-group">
+				<div class="col-sm-6 form-group">
 					<label for="country">Country</label>
 					<input type="text" class="form-control" id="country">
 				</div>
 			</div>
 			<div class="row">
-				<div class="col-md-6 form-group">
-					<input class="btn btn-default" type="button" value="upload">
+				<div class="col-sm-6 form-group">
+					<input class="btn btn-default hcard-button-grey" type="button" value="Upload Avatar">
 				</div>
-				<div class="col-md-6 form-group">
-					<input class="btn btn-default" type="button" value="create">
+				<div class="col-sm-6 form-group">
+					<input class="btn btn-default hcard-button-blue" type="button" value="Create hCard">
 				</div>
 			</div>
 		</div>
-		<div class="hcard-preview-area col-lg-6">
-			<div>hCard Preview</div>
-			<div class="hcard-preview">
-				<div class="row">
-					<img src="http://placehold.it/85x100" class="img-responsive" alt="portrait">
-				</div>
-				<div>
-					<span>Email</span>
-					<span class="hcard-preview-email"></span>
-				</div>
-				<div>
-					<span>Phone</span>
-					<span class="hcard-preview-phone"></span>
-				</div>
-				<div>
-					<span>Address</span>
-					<span class="hcard-preview-address"></span>
-				</div>
-				<div>
-					<span>Postcode</span>
-					<span class="hcard-preview-postcode"></span>
-					<span>Country</span>
-					<span class="hcard-preview-country"></span>
+		<div class="hcard-preview-container col-md-6">
+			<div class="hcard-preview-area">
+				<h2 class="hcard-preview-heading">hCard Preview</h2>
+				<div class="hcard-preview">
+					<div class="hcard-preview-header">
+						<div class="hcard-preview-title">Sam Fairfax</div>
+						<img src="images/portrait.jpg" class="hcard-preview-portrait" alt="portrait">
+					</div>
+					<div class="hcard-preview-details">
+						<div class="hcard-preview-detail">
+							<span class="hcard-preview-name">Email</span>
+							<span class="hcard-preview-value">sam.fairfaxmedia.com.au</span>
+						</div>
+						<div class="hcard-preview-detail">
+							<span class="hcard-preview-name">Phone</span>
+							<span class="hcard-preview-value">02 9282 2833</span>
+						</div>
+						<div class="hcard-preview-detail">
+							<span class="hcard-preview-name">Address</span>
+							<span class="hcard-preview-value">1 Darling Island Road</span>
+						</div>
+						<div class="hcard-preview-detail">
+							<span class="hcard-preview-name"> </span>
+							<span class="hcard-preview-value">Pyrmont,NSW</span>
+						</div>
+						<div class="hcard-preview-detail">
+							<span class="hcard-preview-name">Postcode</span>
+							<span class="hcard-preview-value">2009</span>
+							<span class="hcard-preview-name">Country</span>
+							<span class="hcard-preview-value">Australia</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
