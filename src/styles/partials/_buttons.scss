@@ -1,17 +1,31 @@
 
 .hcard-button {
 	font-size: 16px;
-	color: white;
+	color: $white;
 	padding: 8px 30px;
 	border: none;
+
+	&:hover, &:active, &:focus, &:active:focus {
+		color: $white;
+	}
 }
 
 .hcard-button-blue {
 	@extend .hcard-button;
 	background-color: $light_blue;
+	background: linear-gradient(to bottom, $light_blue 0%, $light_blue 95%, $blue 95%, $blue 100%);
+
+	&:hover, &:active, &:focus, &:active:focus {
+		background-color: $blue;
+	}
 }
 
 .hcard-button-grey {
 	@extend .hcard-button;
-	background-color: $dark_grey;
+	background-color: $grey;
+	background: linear-gradient(to bottom, $grey 0%, $grey 95%, $dark_grey 95%, $dark_grey 100%);
+
+	&:hover, &:active, &:focus, &:active:focus {
+		background-color: $dark_grey;
+	}
 }
