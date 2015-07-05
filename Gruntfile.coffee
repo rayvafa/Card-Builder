@@ -70,6 +70,7 @@ module.exports = (grunt) ->
 			build:
 				src: [
 					'bower_components/jquery/dist/jquery.js'
+					'bower_components/angular/angular.js'
 					'<%= config.tmp %>/scripts/**/*.js'
 				]
 				dest: '<%= config.dist %>/scripts/scripts.min.js'
@@ -83,6 +84,12 @@ module.exports = (grunt) ->
 			styles:
 				files: ['<%= config.src %>/styles/**/*.scss']
 				tasks: ['sass', 'cssmin']
+				options:
+					spawn: false
+					debounceDelay: 1000,
+			scripts:
+				files: ['<%= config.src %>/scripts/**/*.coffee']
+				tasks: ['coffee', 'uglify']
 				options:
 					spawn: false
 					debounceDelay: 1000,
