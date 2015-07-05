@@ -5,9 +5,10 @@
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<title>hCard Builder</title>
+	<meta name="description" content="hCard Builder is a business card creator with on-the-fly preview." />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
-	<link rel="stylesheet" href="styles/styles.min.css">
+	<link rel="stylesheet" type="text/css" href="styles/styles.min.css">
 
 	<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
 	<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -30,52 +31,52 @@
 			<div class="row">
 				<div class="col-sm-6 form-group">
 					<label for="givenName">Given name</label>
-					<input type="text" class="form-control" id="givenName" ng-model="giverName" autocomplete="off">
+					<input type="text" class="form-control" id="givenName" ng-model="giverName">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="surename">Surename</label>
-					<input type="text" class="form-control" id="surename" ng-model="surename" autocomplete="off">
+					<input type="text" class="form-control" id="surename" ng-model="surename">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6 form-group">
 					<label for="email">Email</label>
-					<input type="text" class="form-control" id="email" ng-model="email" autocomplete="off">
+					<input type="text" class="form-control" id="email" ng-model="email">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="phone">phone</label>
-					<input type="text" class="form-control" id="phone" ng-model="phone" autocomplete="off">
+					<input type="text" class="form-control" id="phone" ng-model="phone">
 				</div>
 			</div>
 			<div class="hcard-form-separator">Address</div>
 			<div class="row">
 				<div class="col-sm-6 form-group">
 					<label for="houseName">House name or #</label>
-					<input type="text" class="form-control" id="houseName" ng-model="houseName" autocomplete="off">
+					<input type="text" class="form-control" id="houseName" ng-model="houseName">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="phone">Street</label>
-					<input type="text" class="form-control" id="street" ng-model="street" autocomplete="off">
+					<input type="text" class="form-control" id="street" ng-model="street">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6 form-group">
 					<label for="suburb">Suburb</label>
-					<input type="text" class="form-control" id="suburb" ng-model="suburb" autocomplete="off">
+					<input type="text" class="form-control" id="suburb" ng-model="suburb">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="state">State</label>
-					<input type="text" class="form-control" id="state" ng-model="state" autocomplete="off">
+					<input type="text" class="form-control" id="state" ng-model="state">
 				</div>
 			</div>
 			<div class="row">
 				<div class="col-sm-6 form-group">
 					<label for="postcode">Postcode</label>
-					<input type="text" class="form-control" id="postcode" ng-model="postcode" autocomplete="off">
+					<input type="text" class="form-control" id="postcode" ng-model="postcode">
 				</div>
 				<div class="col-sm-6 form-group">
 					<label for="country">Country</label>
-					<input type="text" class="form-control" id="country" ng-model="country" autocomplete="off">
+					<input type="text" class="form-control" id="country" ng-model="country">
 				</div>
 			</div>
 			<div class="row">
@@ -107,11 +108,11 @@
 						</div>
 						<div class="hcard-preview-detail">
 							<span class="hcard-preview-name">Address</span>
-							<span class="hcard-preview-value">{{ houseName }}, {{ street }}</span>
+							<span class="hcard-preview-value">{{ houseName }} {{ street }}</span>
 						</div>
 						<div class="hcard-preview-detail">
 							<span class="hcard-preview-name"> </span>
-							<span class="hcard-preview-value">{{ suburb }}, {{ state }}</span>
+							<span class="hcard-preview-value">{{ suburb }}<span ng-show="suburb">, </span>{{ state }}</span>
 						</div>
 						<div class="hcard-preview-detail">
 							<span class="hcard-preview-name">Postcode</span>
