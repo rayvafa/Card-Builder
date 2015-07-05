@@ -1,0 +1,38 @@
+
+.hcard-button {
+	font-size: 16px;
+	color: $white;
+	padding: 8px 30px;
+	border: none;
+	width: 200px;
+
+	&:hover, &:active, &:focus, &:active:focus {
+		color: $white;
+	}
+}
+
+.hcard-button-blue {
+	@extend .hcard-button;
+	background-color: $light_blue;
+	border-bottom: 2px solid $blue;
+
+	&:hover, &:active, &:focus, &:active:focus {
+		background-color: $blue;
+		border-bottom: 2px solid $blue;
+	}
+}
+
+.hcard-button-grey {
+	@extend .hcard-button;
+	background-color: $grey;
+	border-bottom: 2px solid $dark_grey;
+
+	&:hover, &:active, &:focus, &:active:focus {
+		background-color: $dark_grey;
+		border-bottom: 2px solid $dark_grey;
+	}
+}
+
+.hcard-file-upload-button {
+	visibility: hidden;
+}

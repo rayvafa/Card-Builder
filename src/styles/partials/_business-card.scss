@@ -1,0 +1,79 @@
+
+.hcard-preview-container {
+	background-color: $extra_light_grey;
+	padding: 100px 45px 150px;
+
+	.hcard-preview-area {
+
+		.hcard-preview-heading {
+			font-family: 'Merriweather Sans', sans-serif;
+			font-size: 16px;
+			text-align: right;
+			color: $light_grey;
+			text-transform: uppercase;
+		}
+
+		.hcard-preview {
+			background-color: $white;
+			border-bottom: 2px solid $grey;
+
+			.hcard-preview-header {
+				background-color: $dark_blue;
+				height: 100px;
+			}
+
+			.hcard-preview-portrait {
+				border: 1px solid $light_grey;
+				border-top: none;
+				float: right;
+				margin-top: 10px;
+				margin-right: 12px;
+				width: 85px;
+			}
+
+			.hcard-preview-title {
+				font-family: 'Merriweather', serif;
+				font-weight: 700;
+				font-size: 24px;
+				color: $white;
+				display: inline-block;
+				padding: 50px 25px 20px;
+			}
+
+			.hcard-preview-details {
+				padding: 25px;
+			}
+
+			.hcard-preview-detail {
+				margin: 10px 0;
+				border-bottom: 1px solid $light_grey;
+
+				.hcard-preview-name {
+					font-family: 'Merriweather Sans', sans-serif;
+					font-size: 10px;
+					display: inline-block;
+					width: 80px;
+					text-transform: uppercase;
+					color: $dark_blue;
+				}
+
+				.hcard-preview-value {
+					font-family: 'Merriweather', serif;
+					font-size: 16px;
+					display: inline-block;
+					min-width: 85px;
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-sm-min) {
+	.hcard-preview-container {
+		padding: 30px 15px;
+	}
+
+	.hcard-preview-detail .hcard-preview-value {
+		min-width: 25px !important;
+	}
+}
