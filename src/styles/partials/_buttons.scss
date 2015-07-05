@@ -14,19 +14,25 @@
 .hcard-button-blue {
 	@extend .hcard-button;
 	background-color: $light_blue;
-	background: linear-gradient(to bottom, $light_blue 0%, $light_blue 95%, $blue 95%, $blue 100%);
+	border-bottom: 2px solid $blue;
 
 	&:hover, &:active, &:focus, &:active:focus {
 		background-color: $blue;
+		border-bottom: 2px solid $blue;
 	}
 }
 
 .hcard-button-grey {
 	@extend .hcard-button;
 	background-color: $grey;
-	background: linear-gradient(to bottom, $grey 0%, $grey 95%, $dark_grey 95%, $dark_grey 100%);
+	border-bottom: 2px solid $dark_grey;
 
 	&:hover, &:active, &:focus, &:active:focus {
 		background-color: $dark_grey;
+		border-bottom: 2px solid $dark_grey;
 	}
+}
+
+.hcard-file-upload-button {
+	visibility: hidden;
 }
